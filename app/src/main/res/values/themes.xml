@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SpankApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/text_primary</item>
+        <item name="colorSecondary">@color/accent_purple</item>
+        <item name="colorOnSecondary">@color/text_primary</item>
+        <item name="android:windowBackground">@color/bg_dark</item>
+        <item name="android:statusBarColor">@color/bg_dark</item>
+        <item name="android:navigationBarColor">@color/bg_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <!-- Chip styles -->
+        <item name="chipStyle">@style/SpankChip</item>
+    </style>
+
+    <style name="SpankChip" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="chipBackgroundColor">@color/card_bg</item>
+        <item name="checkedIconVisible">false</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipStrokeColor">@color/accent_pink</item>
+    </style>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroSpank</string>
+    <string name="status_idle">Press Start to begin</string>
+    <string name="status_listening">👂 Listening… slap me!</string>
+    <string name="btn_start">▶  Start Listening</string>
+    <string name="btn_stop">■  Stop</string>
+    <string name="notification_title">SpankApp is listening</string>
+    <string name="notification_stop">Stop</string>
+</resources>

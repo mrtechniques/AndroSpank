@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+
+    <!-- Hand/slap shape using paths -->
+    <!-- Palm -->
+    <path
+        android:fillColor="#FF4D8F"
+        android:pathData="M20,30 C20,24 24,20 28,20 L36,20 C40,20 44,24 44,30 L44,50
+                          C44,54 40,58 36,58 L28,58 C24,58 20,54 20,50 Z"/>
+    <!-- Thumb -->
+    <path
+        android:fillColor="#FF4D8F"
+        android:pathData="M16,38 C13,38 11,36 11,33 C11,30 13,28 16,28 L20,28 L20,38 Z"/>
+    <!-- Finger 1 -->
+    <path
+        android:fillColor="#FF4D8F"
+        android:pathData="M26,20 L26,12 C26,9.8 27.8,8 30,8 C32.2,8 34,9.8 34,12 L34,20 Z"/>
+    <!-- Finger 2 -->
+    <path
+        android:fillColor="#FF4D8F"
+        android:pathData="M34,20 L34,10 C34,7.8 35.8,6 38,6 C40.2,6 42,7.8 42,10 L42,20 Z"/>
+    <!-- Motion lines -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M48,22 L54,16"/>
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M50,30 L57,28"/>
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M48,38 L55,40"/>
+</vector>

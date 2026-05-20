@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark theme background -->
+    <color name="bg_dark">#0F0F14</color>
+    <color name="card_bg">#1A1A24</color>
+    <color name="divider">#2A2A38</color>
+
+    <!-- Text -->
+    <color name="text_primary">#F0F0FF</color>
+    <color name="text_secondary">#888899</color>
+
+    <!-- Accents -->
+    <color name="accent_pink">#FF4D8F</color>
+    <color name="accent_purple">#9B5DE5</color>
+    <color name="accent_teal">#00BBD4</color>
+
+    <!-- Button states -->
+    <color name="start_color">#1DB954</color>
+    <color name="stop_color">#E53935</color>
+
+    <!-- Status bar -->
+    <color name="colorPrimaryDark">#0F0F14</color>
+    <color name="colorPrimary">#FF4D8F</color>
+    <color name="colorAccent">#9B5DE5</color>
+</resources>

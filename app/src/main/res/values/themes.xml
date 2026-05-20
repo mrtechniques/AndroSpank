@@ -15,10 +15,11 @@
     </style>
 
     <style name="SpankChip" parent="Widget.MaterialComponents.Chip.Choice">
-        <item name="android:textColor">@color/text_primary</item>
-        <item name="chipBackgroundColor">@color/card_bg</item>
+        <item name="android:textColor">@color/chip_text_selector</item>
+        <item name="chipBackgroundColor">@color/chip_background_selector</item>
         <item name="checkedIconVisible">false</item>
         <item name="chipStrokeWidth">1dp</item>
         <item name="chipStrokeColor">@color/accent_pink</item>
+        <item name="rippleColor">@color/accent_pink</item>
     </style>
 </resources>

@@ -213,7 +213,7 @@ public class MainActivity extends AppCompatActivity
         chipGroupMode.setSingleSelection(true);
 
         for (SpankMode mode : SpankMode.values()) {
-            Chip chip = new Chip(this);
+            Chip chip = new Chip(new android.view.ContextThemeWrapper(this, R.style.SpankChip));
             chip.setText(mode.emoji + " " + mode.displayName);
             chip.setCheckable(true);
             chip.setTag(mode);
@@ -371,6 +371,13 @@ public class MainActivity extends AppCompatActivity
     private void setupToggleButton() {
         btnToggle.setOnClickListener(v -> {
             if (!bound || service == null) return;
+
+            // Validation: Custom mode needs a file
+            if (!listening && config.getMode() == SpankMode.CUSTOM && config.getCustomSoundUri() == null) {
+                Toast.makeText(this, "⚠️ Please select an audio file for Custom mode first!", Toast.LENGTH_LONG).show();
+                return;
+            }
+
             Intent intent = new Intent(this, SpankService.class);
             if (listening) {
                 intent.setAction(SpankService.ACTION_STOP);

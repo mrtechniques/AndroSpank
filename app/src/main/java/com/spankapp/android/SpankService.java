@@ -107,9 +107,9 @@ public class SpankService extends Service {
             config.setMode(com.spankapp.android.modes.SpankMode.valueOf(
                 p.getString("mode", SpankConfig.DEFAULT_MODE.name())));
         } catch (Exception ignored) {}
-        config.setVibrateOnHit(p.getBoolean("vibrate",   true));
-        config.setVolumeScaling(p.getBoolean("volscale", true));
-        config.setRunInBackground(p.getBoolean("background", false));
+        config.setVibrateOnHit(p.getBoolean("vibrate",   false));
+        config.setVolumeScaling(p.getBoolean("volscale", false));
+        config.setRunInBackground(p.getBoolean("background", true));
     }
 
     @Override
@@ -149,7 +149,7 @@ public class SpankService extends Service {
     public int getTotalSpanks() { return totalSpanks; }
     public long getLastSpankMs() { return lastSpankMs; }
     public boolean isListening() {
-        return accelerometer != null && accelerometer.isAvailable();
+        return accelerometer != null && accelerometer.isActive();
     }
 
     /** Manually trigger a spank (for testing/UI). */

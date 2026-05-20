@@ -17,7 +17,7 @@ public class SpankConfig {
     public static final long   MIN_COOLDOWN_MS        = 100L;
     public static final long   MAX_COOLDOWN_MS        = 5000L;
 
-    public static final float  DEFAULT_VOLUME         = 0.9f;
+    public static final float  DEFAULT_VOLUME         = 1.0f;
     public static final SpankMode DEFAULT_MODE        = SpankMode.PAIN;
 
     // ── Fields ──────────────────────────────────────────────────────────────────

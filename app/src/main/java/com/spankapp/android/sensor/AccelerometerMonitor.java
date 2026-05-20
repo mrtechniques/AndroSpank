@@ -66,6 +66,10 @@ public class AccelerometerMonitor implements SensorEventListener {
         return accel != null;
     }
 
+    public boolean isActive() {
+        return active;
+    }
+
     public void setListener(SpankListener l) {
         listener = l;
     }
